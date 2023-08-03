@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Logo, NavItem } from ".";
+import { NavItem } from ".";
 
 const Menu_List = [
   { text: "services", href: "/services" },
