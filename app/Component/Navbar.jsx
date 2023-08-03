@@ -1,21 +1,24 @@
 import React, { useState } from "react";
-import { NavItem } from ".";
+import Link from "next/link";
+import NavItem from "./NavItem";
 
 const Menu_List = [
-  { text: "services", href: "/services" },
-  { text: "privacy Policy", href: "/privacypolicy" },
+  { text: "about us", href: "/services" },
+  { text: "service", href: "/privacypolicy" },
+  { text: "Blog", href: "/privacypolicy" },
   { text: "Terms & Conditions", href: "/terms-and-conditions" },
+  { text: "Contact us", href: "/terms-and-conditions" },
 ];
 const Navbar = () => {
   const [navActive, setNavActive] = useState(null);
   const [activeIdx, setNavActiveIdx] = useState(-1);
   return (
-    <Header className="sticky z-30 top-0 bg-white">
+    <div className="sticky z-30 top-0 bg-white">
       <nav className={`nav ${navActive ? "active" : ""}`}>
         <Link href={"/"}>
-          <a onClick={() => setNavActiveIdx(-1)}>
+          <span onClick={() => setNavActiveIdx(-1)}>
             <h1 className="text-xl font-semibold">DigitalFlux</h1>
-          </a>
+          </span>
         </Link>
         <div
           className={`menu_icon ${navActive ? "active" : ""}`}
@@ -39,7 +42,7 @@ const Navbar = () => {
           ))}
         </div>
       </nav>
-    </Header>
+    </div>
   );
 };
 export default Navbar;
