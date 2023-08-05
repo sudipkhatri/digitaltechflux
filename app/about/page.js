@@ -1,15 +1,14 @@
 import Img from "../../src/Image/about.png";
 import Image from "next/image";
 import "../globals.css";
-import Navbar from "../Component/Navbar";
+//import Navbar from "../Component/Navbar";
 
 
 export default function page() {
   return (
     <>
-      <Navbar />
 
-      <div className="w-screen min-h-screen my-5">
+      <div className="w-screen min-h-screen my-5 ">
         <div className="md:w-[95vw] md:h-[92vh] 2xl:w-[1620px] m-auto grid grid-cols-1 md:grid-cols-2 sm:gap-4 gap-2">
           <div className="flex flex-col justify-center sm:gap-5 gap-3 sm:pl-9 pl-4 ">
             <h4 className="animate-bounce text-[#ff792e] sm:pl-9 pl-0">
@@ -59,8 +58,8 @@ export default function page() {
           </div>
         </div>
       </div>
-      <div className="w-screen min-h-screen my-5 pt-9">
-        <div className="md:w-[95vw] md:h-[92vh] 2xl:w-[1620px] m-auto grid grid-cols-1 md:grid-cols-2 sm:gap-4 gap-2">
+      <div className="w-screen min-h-screen h-auto my-5 pt-9">
+        <div className="md:w-[95vw] md:min-h-[92vh]  2xl:w-[1620px] m-auto grid grid-cols-1 md:grid-cols-2 sm:gap-4 gap-2">
           <div className="flex flex-col justify-center sm:gap-5 gap-3 sm:pl-9 pl-4 ">
             <h4 className="text-[#ff792e] sm:pl-9 pl-0">Who We Are</h4>
             <h1
